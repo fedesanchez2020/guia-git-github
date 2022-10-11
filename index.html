@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git y Github</title>
+</head>
+<body>
+    <h1>Clase git y github</h1>
+
+    <h3>¿Qué es git?</h3>
+    <h3>¿Qué es github?</h3>
+    <h3>Instalación</h3>
+    <h3>Configuración usuario/email</h3>
+    <h3>¿Qué es un repositorio?</h3>
+    
+    <h3>Comandos básicos</h3>
+    
+    <h3>Vinculando el dispositivo con Github</h3>
+    <h4>Verificar si ya tenemos una clave ssh existente con la consola</h4>
+    <p>
+        En Windows (~ = Alt+126) y Mac (Hay una tecla ~ y `) : <br>
+        ls -al ~/.ssh
+    </p>
+    <p>Crear una Clave SSH:
+        En Windows y Mac: <br>
+        ssh-keygen -t ed25519 -C "your_email@example.com" <br>
+        ENTER <br>
+        Ponerle una "contraseña" o ENTER y repetirla cuando lo pida. <br>
+        Abrir el archivo con un editor de texto y copiar la clave generada incluyendo el mail, o mostrar la clave con el comando <br>
+        cat ~/.ssh/id_ed25519.pub <br>
+        Copiar la clave (incluyendo el mail) y pegarla en github.
+    </p>
+    
+</body>
+</html>

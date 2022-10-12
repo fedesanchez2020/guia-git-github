@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Referencia rápida para Git y Github</title>
+    <title>Configurar Git y Github</title>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
@@ -18,16 +18,13 @@
             <div class="container">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#section1">Qué es Git</a>
+                        <a class="nav-link" href="#section1">Configurar Git</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#section2">Configurar-Vincular</a>
+                        <a class="nav-link" href="#section2">Creación de Clave SSH</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#section3">Comandos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#section3">Ramas</a>
+                        <a class="nav-link" href="#section3">Vincular con GitHub</a>
                     </li>
                 </ul>
             </div>
@@ -36,34 +33,45 @@
         <div class="container mt-1">
             <h1>Clase git y github</h1>
 
-            <!-- Section 2 -->
-            <div id="section2" class="container-fluid" style="padding:100px 20px;">
-                <h4>Configuración</h4>
+            <!-- Section 1 -->
+            <div id="section1" class="container-fluid" style="padding:100px 20px;">
+                <h4>Configurar Usuario y Correo electrónico para todos los proyectos</h4>
                 <ol>
                     <li>git config --global user.name "tu_nombre"</li>
                     <li>git config --global user.email "tu_correo@tucorreo.com"</li>
                     <img src="./img/configuracion.jpg" alt="">
                 </ol>
-                
+            </div>
 
-                <h4>Vincular la PC con Github</h4>
-                <p>Crear la clave SSH</p>
+            <!-- Section 2 -->
+            <div id="section2" class="container-fluid" style="padding:100px 20px;">
+                <h4>Crear clave SSH</h4>
                 <ol>
                     <li>ssh-keygen -t ed25519 -C "tu_correo@tucorreo.com"</li>
-                    <li>después de apretar ENTER nos va a preguntar donde guardarla</li>
+                    <li>Después de apretar ENTER nos va a preguntar donde guardarla.</li>
                     <img src="./img/keygen.jpg" class="mb-4" alt="">
                     <li>Lo dejamos así como está para guardarla en la carpeta por defecto.
-                        <br>Damos ENTER y nos pregunta si queremos ponerle un password.</li>
+                        <br>Damos ENTER y nos pregunta si queremos ponerle un password.
+                    </li>
                     <img src="./img/passphrase.jpg" class="mb-4" alt="">
-                    <li>Le ponemos un password o dejamos como está y presionamos ENTER. <br>Nos pide la confirmación y otra vez ENTER</li>
+                    <li>Le ponemos un password o dejamos como está y presionamos ENTER. <br>Nos pide la confirmación y
+                        otra vez ENTER.</li>
                     <img src="./img/clavessh.jpg" class="mb-4" alt="">
                     <li>Abrimos la clave y copiamos la linea completa desde ssh hasta que finaliza el mail.</li>
                     <img src="./img/claveparacopiar.jpg" class="mb-4" alt="">
+                </ol>
+            </div>
+
+            <!-- Section 3 -->
+            <div id="section3" class="container-fluid" style="padding:100px 20px;">
+                <h4>Vincular con GitHub</h4>
+                <ol>
                     <li>Por último vamos a la página de Github y en nuestro avatar vamos a settings</li>
                     <img src="./img/githubSettings.jpg" class="mb-4" alt="">
                     <li>En setting entramos en SSH and GPG Keys y añadimos una clave con el botón verde.</li>
                     <img src="./img/newkey.jpg" class="mb-4" alt="">
-                    <li>Le ponemos un título cualquiera y pegamos la clave copiada de la consola. <br>Finalizamos con el botón Add SSH key y ya tendremos vinculada nuestra PC con Github</li>
+                    <li>Le ponemos un título cualquiera y pegamos la clave copiada de la consola. <br>Finalizamos con el
+                        botón Add SSH key y ya tendremos vinculada nuestra PC con Github</li>
                     <img src="./img/klavepegada.jpg" class="mb-4" alt="">
                 </ol>
             </div>
